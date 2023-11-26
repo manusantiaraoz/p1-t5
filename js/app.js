@@ -13,7 +13,7 @@ function nuevoJuego() {
 
 const comprobar = (e) => {
   e.preventDefault();
-
+console.log(randomVariable);
   let ingreso = parseInt(infoInput.value);
   if (ingreso === randomVariable) {
     textNumero.innerHTML = `${randomVariable}`;
