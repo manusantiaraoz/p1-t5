@@ -13,11 +13,9 @@ function nuevoJuego() {
 
 const comprobar = (e) => {
   e.preventDefault();
-console.log(randomVariable);
   let ingreso = parseInt(infoInput.value);
   if (ingreso === randomVariable) {
     textNumero.innerHTML = `${randomVariable}`;
-
     alert("GANASTE!!");
   } else if (ingreso < randomVariable) {
     alert("casi, el numero que buscas es mayor al numero ingresado");
@@ -25,7 +23,6 @@ console.log(randomVariable);
     alert("casi, el numero que buscas es menor al numero ingresado");
   }
   formulario.reset();
-
 };
 /*
 
